@@ -24,168 +24,69 @@
 
 <body>
     
-    <header class="header text-center">	    
-	    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Anshuman's Blog</a></h1>
-        
-	    <nav class="navbar navbar-expand-lg navbar-dark" >
-           
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div id="navigation" class="collapse navbar-collapse flex-column" >
-				<div class="profile-section pt-3 pt-lg-0">
-				    <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.jpg" alt="image" >			
-					
-					<div class="bio mb-3">Hi, my name is Anshuman. I am a full stack developer with 10+ years of experience with multiple technologies like Golang, NodeJS, Java, PHP for Server Side and React, Angular, ActionScript for web apps as well experience with AI technologies like MyCroft AI, Alexa, Google Assistant.<br>
-						<!-- <a href="about.html">Find out more about me in my Resume</a> -->
-						<a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>Find out more about me in my Resume</a>
-					</div><!--//bio-->
-					<ul class="social-list list-inline py-3 mx-auto">
-			            <li class="list-inline-item"><a href="https://twitter.com/anshumanpradipp"><i class="fab fa-twitter fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="https://www.linkedin.com/in/anshuman-patil-a5818133/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="https://github.com/anshumanpatil"><i class="fab fa-github-alt fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="https://stackoverflow.com/users/2223260/anshuversatile"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="https://www.facebook.com/anshumanpradippatil1506"><i class="fab fa-facebook fa-fw"></i></a></li>
-			        </ul><!--//social-list-->
-			        <hr> 
-				</div><!--//profile-section-->
-				
-				<ul class="navbar-nav flex-column text-left">
-					<li class="nav-item active">
-					    <a class="nav-link" href="index.php"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-					    <a class="nav-link" href="blog-post.html"><i class="fas fa-bookmark fa-fw mr-2"></i>Blog Post</a>
-					</li>
-					<!-- <li class="nav-item">
-					    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
-					</li> -->
-				</ul>
-				
-				<div class="my-2 my-md-3">
-				    <a class="btn btn-primary" href="https://themes.3rdwavemedia.com/" target="_blank">Get in Touch</a>
-				</div>
-			</div>
-		</nav>
-    </header>
+    <?php require_once('parts/headers.php')?>
     
     <div class="main-wrapper">
 	    
 	    <article class="blog-post px-3 py-5 p-md-5">
 		    <div class="container">
 			    <header class="blog-post-header">
-				    <h2 class="title mb-2">Go With Anshu</h2>
-				    <div class="meta mb-3"><span class="date">Published 3 months ago</span><span class="time">5 min read</span><span class="comment"><a href="#">4 comments</a></span></div>
+					<h2 class="title mb-2">Go With Anshu</h2>
+					<?php
+						$date1 = "2019-06-15";
+						$date2 = date('Y-m-d');
+						
+						$diff = abs(strtotime($date2) - strtotime($date1));
+						
+						$years = floor($diff / (365*60*60*24));
+						$months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
+						$days = floor(($diff - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
+						
+						
+						
+
+
+						echo '<div class="meta mb-3"><span class="date">Published '. (($years*12)+$months) . ' months ago</span><span class="time">20-30 minutes required to read.</span></div>';
+						// printf("%d years, %d months, %d days\n", $years, $months, $days);
+					?>
+				    <!-- <div class="meta mb-3"><span class="date">Published 3 months ago</span><span class="time">5 min read</span><span class="comment"><a href="#">4 comments</a></span></div> -->
 			    </header>
 			    
 			    <div class="blog-post-body">
 				    <figure class="blog-banner">
-				        <a href="https://made4dev.com"><img class="img-fluid" src="assets/images/golang.png" alt="image"></a>
+				        <img class="img-fluid" src="assets/images/golang.png" alt="image">
 					</figure>
 
-					<h3 class="mt-5 mb-3">About Info</h3>
-				    <p>Go is a procedural programming language. It was developed in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson at Google but launched in 2009 as an open-source programming language. Programs are assembled by using packages, for efficient management of dependencies. This language also supports environment adopting patterns alike to dynamic languages. </p>
-					
-				    <h5 class="my-3">What we will cover</h5>
-				    <ul class="mb-5">
-					  <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
-					  <li class="mb-2">Aenean commodo ligula eget dolor.</li>
-					  <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
-					</ul>
-
-				    <h3 class="mt-5 mb-3">Code Block Example</h3>
-				    <p>You can get more info at <a href="https://highlightjs.org/" target="_blank">https://highlightjs.org/</a>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. </p>
-				    <pre>
-					    <code>
-function $initHighlight(block, cls) {
-  try {
-    if (cls.search(/\bno\-highlight\b/) != -1)
-      return process(block, true, 0x0F) +
-             ` class="${cls}"`;
-  } catch (e) {
-    /* handle exception */
-  }
-  for (var i = 0 / 2; i < classes.length; i++) {
-    if (checkCondition(classes[i]) === undefined)
-      console.log('undefined');
-  }
-}
-
-export  $initHighlight;
-					    </code>
-				    </pre>
-				    <h3 class="mt-5 mb-3">Typography</h3>
-				    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-				    <h5 class="my-3">Bullet Points:</h5>
-				    <ul class="mb-5">
-					  <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
-					  <li class="mb-2">Aenean commodo ligula eget dolor.</li>
-					  <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
-					</ul>
-					<ol class="mb-5">
-					  <li class="mb-2">Lorem ipsum dolor sit amet consectetuer.</li>
-					  <li class="mb-2">Aenean commodo ligula eget dolor.</li>
-					  <li class="mb-2">Aenean massa cum sociis natoque penatibus.</li>
-					</ol>
-					<h5 class="my-3">Quote Example:</h5>
-					<blockquote class="blockquote m-lg-5 py-3 pl-4 px-lg-5">
-						<p class="mb-2">You might not think that programmers are artists, but programming is an extremely creative profession. It's logic-based creativity.</p>
-						<footer class="blockquote-footer">John Romero</footer>
-					</blockquote>
-					
-					<h5 class="my-3">Table Example:</h5>
-					<table class="table table-striped my-5">
-						<thead>
-							<tr>
-								<th scope="col">#</th>
-								<th scope="col">First</th>
-								<th scope="col">Last</th>
-								<th scope="col">Handle</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="row">1</th>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>@mdo</td>
-							</tr>
-							<tr>
-								<th scope="row">2</th>
-								<td>Jacob</td>
-								<td>Thornton</td>
-								<td>@fat</td>
-							</tr>
-							<tr>
-								<th scope="row">3</th>
-								<td>Larry</td>
-								<td>the Bird</td>
-								<td>@twitter</td>
-							</tr>
-						</tbody>
-					</table>
-					
-					<h5 class="mb-3">Embed A Tweet:</h5>
-					
-					<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">1969:<br>-what&#39;re you doing with that 2KB of RAM?<br>-sending people to the moon<br><br>2017:<br>-what&#39;re you doing with that 1.5GB of RAM?<br>-running Slack</p>&mdash; I Am Devloper (@iamdevloper) <a href="https://twitter.com/iamdevloper/status/926458505355235328?ref_src=twsrc%5Etfw">November 3, 2017</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					<?php require_once(dirname(__FILE__) . '/parts/about_go_info.php')?>
+					<?php 
+						$path = dirname(__FILE__) . "/parts/tutor";
+						$result = scandir($path);
+						$files = array_diff($result, array('.', '..'));
+						$i = 1;
+						if(count($files) > 0){
+							// Loop through retuned array
+							foreach($files as $file){
+								if(is_file("$path/$file")){
+									// Display filename
+									if(basename($file) == $i){
+										require_once("$path/$file");
+									}
+								} 
+								$i++;
+							}
+						}
 
 
-				    
-				    <h3 class="mt-5 mb-3">Video Example</h3>
-				    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
+						
+						
+					?>
 
-				    <div class="embed-responsive embed-responsive-16by9">
-					   <iframe width="560" height="315" src="https://www.youtube.com/embed/hnCmSXCZEpU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					
-					</div>
-				   
 			    </div>
 				    
-			    <nav class="blog-nav nav nav-justified my-5">
+			    <!-- <nav class="blog-nav nav nav-justified my-5">
 				  <a class="nav-link-prev nav-item nav-link rounded-left" href="index.html">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
 				  <a class="nav-link-next nav-item nav-link rounded-right" href="blog-list.html">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
-				</nav>
+				</nav> -->
 				
 				<div class="blog-comments-section">
 					<div id="disqus_thread"></div>
@@ -213,20 +114,20 @@ export  $initHighlight;
 		    </div><!--//container-->
 	    </article>
 	    
-	    <section class="promo-section theme-bg-light py-5 text-center">
+	    <!-- <section class="promo-section theme-bg-light py-5 text-center">
 		    <div class="container">
 			    <h2 class="title">Promo Section Heading</h2>
 			    <p>You can use this section to promote your side projects etc. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
                 <figure class="promo-figure">
 			        <a href="https://made4dev.com" target="_blank"><img class="img-fluid" src="assets/images/promo-banner.jpg" alt="image"></a>
 			    </figure>
-		    </div><!--//container-->
-	    </section><!--//promo-section-->
+		    </div>
+	    </section> -->
 	    
 	    <footer class="footer text-center py-2 theme-bg-dark">
 		   
 	        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+                <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="https://anshumanprofile.herokuapp.com/" target="_blank">Xiaoying Riley</a> for developers</small>
 		   
 	    </footer>
     
