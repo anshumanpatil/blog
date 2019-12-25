@@ -23,7 +23,17 @@
 </head> 
 
 <body>
-    
+<div class="toast" data-autohide="false" style="position: absolute; top: 3rem; right: 0;">
+  <div class="toast-header">
+	<strong class="mr-auto text-primary">Resume Download</strong>
+		<!-- <small class="text-muted">5 mins ago</small> -->
+		<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+	</div>
+	<div class="toast-body">
+	<a class="nav-link" href="cv.doc"><i class="fas fa-user fa-fw mr-2"></i>Resume Download</a>
+	</div>
+	</div>	
+	</div>
     <?php require_once('parts/headers.php')?>
     
     <div class="main-wrapper">
@@ -127,7 +137,7 @@
 	    <footer class="footer text-center py-2 theme-bg-dark">
 		   
 	        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="https://anshumanprofile.herokuapp.com/" target="_blank">Xiaoying Riley</a> for developers</small>
+                <small class="copyright">Designed with HTML, CSS, JS, PHP, Heroku, React</small>
 		   
 	    </footer>
     
