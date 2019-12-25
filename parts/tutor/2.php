@@ -8,6 +8,8 @@
     <div>This is declaring variable simply by not assigning any value.
         <pre>
             <code>var a int      /* Common integer */
+const s string = "constant" /* Constant declaration */
+
 var b int8     /* 8 bit integer - value can be from -128 to 127 */
 var c int16    /* 16 bit integer - value can be from -32768 to 32767 */
 var d int32    /* 32 bit integer - value can be from -two billion to two billion */
