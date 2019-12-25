@@ -1,3 +1,4 @@
+<container id="vars">
 <h3 class="mt-5 mb-3">Variable Declaration</h3>
 <p>Variable declaration in go is pretty much differant than other languages.<br>
     <!-- <a href="https://anshumanprofile.herokuapp.com/" target="_blank">https://highlightjs.org/</a>.  -->
@@ -32,7 +33,16 @@ var i uint64    /* 64 bit unsigned integer - value can be from 0 to two trillion
         <pre>
             <code>var a int = 10
 var a, b int = 10, 20 /* You can declare multiple variables at once */
-var e int /* value of `e` would be 0 if not assigned */</code>
+var e int /* value of `e` would be 0 if not assigned */
+f := 1 == 1 /* f would be declared as boolean and assigned true(1 == 1) */
+
+/* Block Scope Declaration is also one more feature. */
+
+var (
+    a int = 10
+    b string = "this as string"
+    c bool /* Variable declared with boolean value would have false if not assigned */
+)</code>
         </pre>
     </div>
     <blockquote class="blockquote m-lg-5 py-3 pl-4 px-lg-5">
@@ -45,3 +55,40 @@ var e int /* value of `e` would be 0 if not assigned */</code>
             <code>/* Go automatically declares TYPE when used with `:=` syntax.  */
 var a  := 10 /* `a` would be automatically declared type as int here  */</code>
         </pre>
+        <br><strong>iota</strong><br>
+        <p>iota identifier is used in const declarations to simplify definitions of incrementing numbers. Because it can be used in expressions, it provides a generality beyond that of simple enumerations.</p>
+        <pre><code>const a = iota /* a is declared and value is 0 */
+fmt.Println(a) /* value of a is 0 now */
+fmt.Println(a) /* value of a is 1 now */
+fmt.Println(c) /* value of a is 2 now */
+fmt.Println(d) /* value of a is 3 now */
+fmt.Println(e)  /* value of a is 4 now ....... And so on*/
+
+/* Also we can use this as */
+
+const (
+    sunday = iota /* 0 */
+    monday /* 1 */
+    tuesday /* 2 */
+    wednesday /* 3 */
+    thursday /* 4 */
+    friday /* 5 */
+    saturday /* 6 */
+)
+</code>
+        </pre>
+
+
+
+
+
+
+        <!-- Last Notes -->
+        <br><strong>Notes to remember</strong><br>
+        <ul>
+            <li>Variable declared must be used or it will cause error.</li>
+            <li>Variable declared with boolean value would have false if not assigned.</li>
+            <li>After first declaration of iota in const block - all other constants after iota without assinment value would be incrementing.</li>
+        </ul>
+
+</container>

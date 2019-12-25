@@ -1,15 +1,48 @@
 {
     "points": [
-        "Variable Declaration",
-        "Premitives",
-        "Constants",
-        "Arrays and Slices",
-        "Maps and Struct",
-        "If and Switch",
-        "Looping",
-        "Defer Panic Recover",
-        "Pointers",
-        "Functions",
-        "Interfaces"
+        {
+            "name": "Variable Declaration",
+            "div": "vars"
+        },
+        {
+            "name": "Operators",
+            "div": "op"
+        },
+        {
+            "name": "Go Packages",
+            "div": "pack"
+        },
+        {
+            "name": "Arrays and Slices",
+            "div": "arr"
+        },
+        {
+            "name": "Maps and Struct",
+            "div": "maps"
+        },
+        {
+            "name": "If and Switch",
+            "div": "condition"
+        },
+        {
+            "name": "Looping",
+            "div": "loops"
+        },
+        {
+            "name": "Defer Panic Recover",
+            "div": "defer"
+        },
+        {
+            "name": "Pointers",
+            "div": "pointers"
+        },
+        {
+            "name": "Functions",
+            "div": "func"
+        },
+        {
+            "name": "Interfaces",
+            "div": "interfaces"
+        }
     ]
 }

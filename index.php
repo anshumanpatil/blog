@@ -23,7 +23,7 @@
 </head> 
 
 <body>
-<div class="toast" data-autohide="false" style="position: absolute; top: 3rem; right: 0;">
+<div class="toast" data-autohide="false" style="position: absolute; top: 3rem; right: 0; zindex:99999999">
   <div class="toast-header">
 	<strong class="mr-auto text-primary">Resume Download</strong>
 		<!-- <small class="text-muted">5 mins ago</small> -->
