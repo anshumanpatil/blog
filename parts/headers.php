@@ -13,7 +13,7 @@
 					
 					<div class="bio mb-3">Hi, my name is Anshuman. I am a full stack developer with 10+ years of experience with multiple technologies like Golang, NodeJS, Java, PHP for Server Side and React, Angular, ActionScript for web apps as well experience with AI technologies like MyCroft AI, Alexa, Google Assistant.<br>
 						<!-- <a href="about.html">Find out more about me in my Resume</a> -->
-						<a class="nav-link" href="cv.doc"><i class="fas fa-user fa-fw mr-2"></i>Find out more about me in my Resume</a>
+						<a class="nav-link" href="https://drive.google.com/file/d/1VPCKWneOhzRCIDfQ_DdE3hrW70UzkLHP/view?usp=sharing"><i class="fas fa-user fa-fw mr-2"></i>Find out more about me in my Resume</a>
 					</div><!--//bio-->
 					<ul class="social-list list-inline py-3 mx-auto">
 			            <li class="list-inline-item"><a target="_blank" href="https://twitter.com/anshumanpradipp"><i class="fab fa-twitter fa-fw"></i></a></li>
@@ -30,7 +30,7 @@
 					    <a class="nav-link" href="index.php"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-					    <a class="nav-link" href="cv.doc"><i class="fas fa-bookmark fa-fw mr-2"></i>Resume Download</a>
+					    <a class="nav-link" href="https://drive.google.com/file/d/1VPCKWneOhzRCIDfQ_DdE3hrW70UzkLHP/view?usp=sharing"><i class="fas fa-bookmark fa-fw mr-2"></i>Resume Download</a>
 					</li>
 					<!-- <li class="nav-item">
 					    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
