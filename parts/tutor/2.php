@@ -21,9 +21,25 @@ var i uint64    /* 64 bit unsigned integer - value can be from 0 to two trillion
     </div>
     <blockquote class="blockquote m-lg-5 py-3 pl-4 px-lg-5">
         <p class="mb-2">
-            <code>important</code> unsigned integers cant be less than 0
+            <code>important</code> signed integers can start from negetive value
+            <code>important</code> unsigned integers can't be less than 0
         </p>
     </blockquote>
 
     <div>This is declaring variable <code>a</code> as integer and assigning value to it both in one line.
-    <pre><code>var a int = 10</code></pre></div><br>
+        <pre>
+            <code>var a int = 10
+var a, b int = 10, 20 /* You can declare multiple variables at once */
+var e int /* value of `e` would be 0 if not assigned */</code>
+        </pre>
+    </div>
+    <blockquote class="blockquote m-lg-5 py-3 pl-4 px-lg-5">
+        <p class="mb-2">
+            Go will infer values on it's own if we use <code>:=</code> syntax
+        </p>
+    </blockquote>
+    <br>
+    <pre>
+            <code>/* Go automatically declares TYPE when used with `:=` syntax.  */
+var a  := 10 /* `a` would be automatically declared type as int here  */</code>
+        </pre>
