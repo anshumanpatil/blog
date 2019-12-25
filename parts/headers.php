@@ -13,14 +13,14 @@
 					
 					<div class="bio mb-3">Hi, my name is Anshuman. I am a full stack developer with 10+ years of experience with multiple technologies like Golang, NodeJS, Java, PHP for Server Side and React, Angular, ActionScript for web apps as well experience with AI technologies like MyCroft AI, Alexa, Google Assistant.<br>
 						<!-- <a href="about.html">Find out more about me in my Resume</a> -->
-						<a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>Find out more about me in my Resume</a>
+						<a class="nav-link" href="cv.doc"><i class="fas fa-user fa-fw mr-2"></i>Find out more about me in my Resume</a>
 					</div><!--//bio-->
 					<ul class="social-list list-inline py-3 mx-auto">
-			            <li class="list-inline-item"><a href="https://twitter.com/anshumanpradipp"><i class="fab fa-twitter fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="https://www.linkedin.com/in/anshuman-patil-a5818133/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="https://github.com/anshumanpatil"><i class="fab fa-github-alt fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="https://stackoverflow.com/users/2223260/anshuversatile"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="https://www.facebook.com/anshumanpradippatil1506"><i class="fab fa-facebook fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a target="_blank" href="https://twitter.com/anshumanpradipp"><i class="fab fa-twitter fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a target="_blank" href="https://www.linkedin.com/in/anshuman-patil-a5818133/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a target="_blank" href="https://github.com/anshumanpatil"><i class="fab fa-github-alt fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a target="_blank" href="https://stackoverflow.com/users/2223260/anshuversatile"><i class="fab fa-stack-overflow fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/anshumanpradippatil1506"><i class="fab fa-facebook fa-fw"></i></a></li>
 			        </ul><!--//social-list-->
 			        <hr> 
 				</div><!--//profile-section-->
