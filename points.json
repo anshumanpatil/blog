@@ -1,8 +1,15 @@
 {
     "points": [
-        "a",
-        "b",
-        "c",
-        "d"
+        "Variable Declaration",
+        "Premitives",
+        "Constants",
+        "Arrays and Slices",
+        "Maps and Struct",
+        "If and Switch",
+        "Looping",
+        "Defer Panic Recover",
+        "Pointers",
+        "Functions",
+        "Interfaces"
     ]
 }
