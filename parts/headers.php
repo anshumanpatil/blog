@@ -1,5 +1,5 @@
 <header class="header text-center">	    
-	    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Anshuman's Blog</a></h1>
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="#">Anshuman's Blog</a></h1>
         
 	    <nav class="navbar navbar-expand-lg navbar-dark" >
            
@@ -11,9 +11,14 @@
 				<div class="profile-section pt-3 pt-lg-0">
 				    <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.jpg" alt="image" >			
 					
-					<div class="bio mb-3">Hi, my name is Anshuman. I am a full stack developer with 10+ years of experience with multiple technologies like Golang, NodeJS, Java, PHP for Server Side and React, Angular, ActionScript for web apps as well experience with AI technologies like MyCroft AI, Alexa, Google Assistant.<br>
+					<div class="bio mb-3">
+					Anshuman Patil.<br>
+					info@anshumanpatil.com.<br>
+					<div style="width: 100%; height: 100px; text-align: left;">
+					
+					</div>
 						<!-- <a href="about.html">Find out more about me in my Resume</a> -->
-						<a class="nav-link" href="https://drive.google.com/file/d/1VPCKWneOhzRCIDfQ_DdE3hrW70UzkLHP/view?usp=sharing"><i class="fas fa-user fa-fw mr-2"></i>Find out more about me in my Resume</a>
+						<a class="nav-link" href="resumes/Anshuman_CV_Profile.doc"><i class="fas fa-user fa-fw mr-2"></i>Find more in my Resume</a>
 					</div><!--//bio-->
 					<ul class="social-list list-inline py-3 mx-auto">
 			            <li class="list-inline-item"><a target="_blank" href="https://twitter.com/anshumanpradipp"><i class="fab fa-twitter fa-fw"></i></a></li>
@@ -26,12 +31,12 @@
 				</div><!--//profile-section-->
 				
 				<ul class="navbar-nav flex-column text-left">
-					<li class="nav-item active">
+					<!-- <li class="nav-item active">
 					    <a class="nav-link" href="index.php"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
 					    <a class="nav-link" href="https://drive.google.com/file/d/1VPCKWneOhzRCIDfQ_DdE3hrW70UzkLHP/view?usp=sharing"><i class="fas fa-bookmark fa-fw mr-2"></i>Resume Download</a>
-					</li>
+					</li> -->
 					<!-- <li class="nav-item">
 					    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
 					</li> -->

@@ -30,7 +30,7 @@
 		<button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
 	</div>
 	<div class="toast-body">
-	<a class="nav-link" href="https://drive.google.com/file/d/1VPCKWneOhzRCIDfQ_DdE3hrW70UzkLHP/view?usp=sharing"><i class="fas fa-user fa-fw mr-2"></i>Resume Download</a>
+	<a class="nav-link" href="resumes/Anshuman_CV_Profile.doc"><i class="fas fa-user fa-fw mr-2"></i>Resume Download</a>
 	</div>
 	</div>	
 	</div>
@@ -98,7 +98,7 @@
 				  <a class="nav-link-next nav-item nav-link rounded-right" href="blog-list.html">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
 				</nav> -->
 				
-				<div class="blog-comments-section">
+				<!-- <div class="blog-comments-section">
 					<div id="disqus_thread"></div>
 					<script>
 
@@ -119,7 +119,7 @@
 						})();
 					</script>
 					<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-				</div><!--//blog-comments-section-->
+				</div> -->
 				
 		    </div><!--//container-->
 	    </article>
